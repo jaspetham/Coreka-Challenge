@@ -1,0 +1,90 @@
+.px-side{
+    padding:0 200px!important;
+}
+
+.navbar{
+    background:green!important;
+}
+
+.navbar-nav a{
+    padding: 0px 20px!important;
+}
+.nav-link{
+    font-size: 20px;
+    color:white!important;
+    margin:auto 0;
+}
+
+.navbar-nav .nav-link .btn-header{
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    padding:10px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+/* Toggler Animation */
+.navbar-toggler {
+    border: none!important;
+    background: transparent !important;
+}
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+  
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+  
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+  
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+  
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+  
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+  
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+@media(max-width:720px){
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .px-side{
+        padding:0 !important;
+    }
+
+    .navbar-brand img{
+        width:80%!important;
+    }
+
+    .navbar-nav a{
+        padding:.5rem .1rem!important;
+    }
+}
