@@ -6,7 +6,7 @@ import Logo from '../assets/logo.png';
 export default class Header extends Component {
     render() {
         return (
-            <Navbar expand="lg" id="navbar">
+            <Navbar expand="lg" id="navbar" fixed="top">
                 <Container fluid className="px-side">
                     <Navbar.Brand href="#">
                         <Image className="img-fluid" src={Logo}/>
