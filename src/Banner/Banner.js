@@ -3,6 +3,8 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import BackgroundImage from '../assets/test.png';
 import Curved from '../assets/path.png';
 import  BannerImg from '../assets/banner.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import './Banner.css';
 
 export default class Banner extends Component {
@@ -20,7 +22,10 @@ export default class Banner extends Component {
                                     <div className="left-banner">
                                         <h1>we create applications with excellent technology</h1>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, perspiciatis. Unde soluta, eveniet, sunt explicabo consequuntur autem placeat amet quaerat voluptatem in sequi fugit ipsum doloribus ipsa pariatur assumenda consectetur.</p>
-                                        <a href="#" className="btn btn-banner">Explore More</a>
+                                        <a href="#" className="btn btn-banner">
+                                            Explore More 
+                                            <span className="pl-3"><FontAwesomeIcon icon={faArrowRight}/></span>
+                                        </a>
                                     </div>
                                 </Container>
                             </Col>
