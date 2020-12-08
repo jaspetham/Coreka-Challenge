@@ -14,3 +14,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+.text-light,
+.title-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.paddingX{
+  padding:0 200px!important;
+}
+
+@media(max-width:720px){
+  .row{
+    margin:0!important;
+  }
+}
