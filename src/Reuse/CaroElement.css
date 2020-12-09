@@ -39,7 +39,7 @@
     transition: .5s ease;
 }
 
-.special-card .card{
+.special-card{
     border-radius: 15px;
     overflow: hidden;
     background:transparent;
@@ -47,7 +47,7 @@
 
 .special-card .card-body{
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(255,255,255, 0.2); /* Black w/opacity/see-through */
+    background-color: rgba(255,255,255, .15); /* Black w/opacity/see-through */
     z-index: 2;
 }
 
@@ -72,13 +72,14 @@
     color:white;
 }
 
-.special-card .card .card-body .btn-live{
+.special-card .card-body .btn-live{
     background-color: #E82B2B;
     border-radius:10px;
     font-weight: 600;
     color:white;
     padding:5px 5px;
 }
+
 
 @media only screen 
 and (min-device-width : 768px) 
