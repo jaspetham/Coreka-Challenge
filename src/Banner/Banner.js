@@ -69,7 +69,7 @@ function Banner() {
                 </Row>
 
                 <Row id="mobile-view">
-                    <Col className="d-lg-none p-0">
+                    <Col className="d-xl-none p-0">
                         <Slider {...mobileSettings}>
                             <Image fluid src={MobileBannerImage}/>
                             <Image fluid src={MobileBannerImage}/>
