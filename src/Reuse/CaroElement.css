@@ -1,0 +1,76 @@
+/* slider carousel custom css */
+.slick-slider{
+    left:-50%;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color:var(--secondary-color);
+}
+
+.slick-prev, .slick-next{
+    z-index:2;
+    bottom:25%;
+}
+.slick-list{
+    border-radius: 15px;
+}
+.slick-next{
+    right:-10px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color:white;
+    opacity: 1;
+}
+.slick-dots li button:before {
+    color: white;
+}
+
+.slick-dots .slick-active button:before{
+    font-size: 15px;
+}
+.slick-dots li button:before {
+    font-size: 10px;
+    transition: .5s ease;
+}
+
+.card{
+    border-radius: 15px;
+    overflow: hidden;
+    background:transparent;
+}
+
+.card-body{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255,255,255, 0.2); /* Black w/opacity/see-through */
+    z-index: 2;
+}
+
+.card-body p{
+    color:var(--secondary-color);
+    margin-bottom:0px;
+}
+
+.card-body small{
+    margin-top:15px;
+    color:grey;
+    opacity: .8;
+}
+
+.card-body .btn-atn{
+    padding:5px 10px;
+    display:block;
+    width:50%;
+    background-color: orange;
+    border-radius: 25px;
+    color:white;
+}
+
+.card .card-body .btn-live{
+    background-color: #E82B2B;
+    border-radius:10px;
+    font-weight: 600;
+    color:white;
+    padding:5px 5px;
+}

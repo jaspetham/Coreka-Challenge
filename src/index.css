@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("./_variables.css");
+
 body,html{
   height:100%;
 }
 body {
   margin: 0;
+  background-color: #0E2641!important;
   font-family:"Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +35,11 @@ li,
 .paddingX{
   padding:0 200px!important;
 }
+
+.paddingY{
+  padding:100px 0!important;
+}
+
 
 @media(max-width:720px){
   .row{
