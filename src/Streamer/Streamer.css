@@ -4,3 +4,21 @@
 #streamer .btn-link{
     padding:10px 25px;
 }
+
+.laptop-screen{
+    display:none;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .laptop-screen{
+        display:block;
+    }
+
+    .large-screen{
+        display:none;
+    }
+}

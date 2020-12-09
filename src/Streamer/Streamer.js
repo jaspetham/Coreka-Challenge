@@ -130,6 +130,19 @@ function Streamer() {
         )
     })
 
+    const streamerLaptop = streamers2.map(streamer =>{
+        return(
+            <Col key={streamer.id} id={streamer.id}>
+                <StreamerBox
+                    name={streamer.name}
+                    title={streamer.title}
+                    liveCount={streamer.liveUserNum}
+                    src={streamer.src}
+                />
+            </Col>
+        )
+    })
+
     const streamerList3= streamers3.map(streamer=>{
         return(
             <Col key={streamer.id} id={streamer.id}>
@@ -145,7 +158,7 @@ function Streamer() {
     })
     return (
         <section id="streamer" className="paddingY">
-            <Container fluid className="paddingX">
+            <Container fluid className="paddingX large-screen">
                 {/* first row of streamer 3 item + 1 big text div  */}
                 <Row>
                     <Col lg={4} className="my-auto">
@@ -161,11 +174,32 @@ function Streamer() {
                 <Row>
                     {streamerList2}
                 </Row>
-
                 {/* final row of streamer 3 item + 1 big text div */}
                 <Row>
                     {streamerList3}
                     <Col lg={4} className="my-auto">
+                        <div className="section-title text-white">
+                            <p>Upcoming live events</p>
+                            <h1>Browse through some of the upcoming live events hand picked by people.</h1>
+                            <Button variant="link">See more upcoming auctions</Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container fluid className="paddingX laptop-screen">
+                <Row>
+                    <Col className="my-auto">
+                        <div className="section-title text-white">
+                            <p>Popular live events</p>
+                            <h1>Catch your favourite streams and personas</h1>
+                            <Button variant="link">Start watching now</Button>
+                        </div>
+                    </Col>
+                    {streamerList}
+                    {streamerLaptop}
+                    {streamerList3}
+                    <Col className="my-auto">
                         <div className="section-title text-white">
                             <p>Upcoming live events</p>
                             <h1>Browse through some of the upcoming live events hand picked by people.</h1>
