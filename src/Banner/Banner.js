@@ -21,10 +21,10 @@ function Banner() {
         <section id="banner" className="paddingY">
             <Container fluid className="paddingX">
                 <Row>
-                    <Col md={9}>
+                    <Col md={9} xs={12}>
                         <Image fluid src={BannerImage} className="banner-img"/>
                     </Col>
-                    <Col md={3} className="my-auto">
+                    <Col md={3} xs={12} className="my-auto">
                         <Slider {...settings}>
                             <CaroElement
                                 bigImgSrc={CaroBanner}

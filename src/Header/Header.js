@@ -7,10 +7,10 @@ import { faBell, faGift, faSearch, faUserCircle, faWallet } from '@fortawesome/f
 
 function Header() {
     return (
-        <Navbar expand="lg">
+        <Navbar expand="xl">
             <Container fluid className="position-relative">
                 <Row className="w-100">
-                    <Col className="col-10 col-md-3 d-flex justify-content-md-center">
+                    <Col className="col-10 col-xl-3 col-md-11 d-flex justify-content-lg-center">
                         <Navbar.Brand href="#home">
                             <Image src={Logo}/>
                         </Navbar.Brand>
@@ -22,10 +22,10 @@ function Header() {
                         <span className="icon-bar bottom-bar"> </span>
                     </Navbar.Toggle>
 
-                    <Col className="col col-md-9  p-0 pt-3">
+                    <Col className="col col-xl-9 col-md-12  p-0 pt-3">
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Row className="w-100">
-                                <Col md={6} className="col-12">
+                                <Col lg={5} md={12} className="col-12 search-bar">
                                     <Form inline>
                                         <InputGroup>
                                             <InputGroup.Prepend>
@@ -38,7 +38,7 @@ function Header() {
                                     </Form>
                                 </Col>
 
-                                <Col md={6} className="col-12">
+                                <Col lg={7} md={12} className="col-12">
                                     <Nav className="nav-menu d-flex flex-row">
                                         <Nav.Link href="#">
                                             <span>

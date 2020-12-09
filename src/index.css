@@ -40,9 +40,23 @@ li,
   padding:100px 0!important;
 }
 
-
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  .row{
+    margin:0!important;
+  }
+}
 @media(max-width:720px){
   .row{
     margin:0!important;
+  }
+
+  .paddingX{
+    padding:0!important;
+  }
+  
+  .paddingY{
+    padding:0!important;
   }
 }

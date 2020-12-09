@@ -95,6 +95,40 @@
 .login-area:hover span{
     color:var(--hover-color)!important;
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .form-inline{
+        justify-content: center;
+        padding:10px 0;
+    }
+    .form-inline .form-control{
+        width:500px!important;
+    }
+
+    .nav-menu{
+        padding:20px 0;
+        justify-content: center;
+    }
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .form-inline .form-control{
+        width:335px!important;
+    }
+    
+    .search-bar{
+        align-self: center;
+    }
+    .nav-menu{
+        align-items: center;
+    }
+}
+
 @media(max-width:720px){
     .navbar-toggler:focus,
     .navbar-toggler:active,
