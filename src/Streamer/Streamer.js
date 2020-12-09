@@ -148,7 +148,7 @@ function Streamer() {
             <Container fluid className="paddingX">
                 {/* first row of streamer 3 item + 1 big text div  */}
                 <Row>
-                    <Col lg={4}>
+                    <Col lg={4} className="my-auto">
                         <div className="section-title text-white">
                             <p>Popular live events</p>
                             <h1>Catch your favourite streams and personas</h1>
@@ -165,7 +165,7 @@ function Streamer() {
                 {/* final row of streamer 3 item + 1 big text div */}
                 <Row>
                     {streamerList3}
-                    <Col lg={4}>
+                    <Col lg={4} className="my-auto">
                         <div className="section-title text-white">
                             <p>Upcoming live events</p>
                             <h1>Browse through some of the upcoming live events hand picked by people.</h1>
