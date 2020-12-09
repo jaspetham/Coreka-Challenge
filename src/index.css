@@ -40,23 +40,41 @@ li,
   padding:100px 0!important;
 }
 
+/* ipad */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
   .row{
     margin:0!important;
   }
+  .paddingX{
+    padding:0px 20px!important;
+  }
+  .paddingY{
+    padding:50px 0!important;
+  }
 }
+/* ipad pro */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .paddingX{
+      padding:0px 20px!important;
+    }
+    .paddingY{
+      padding:50px 0!important;
+    }
+}
+
+/* mobile */
 @media(max-width:720px){
   .row{
     margin:0!important;
   }
 
-  .paddingX{
+  .paddingX, .paddingY{
     padding:0!important;
   }
   
-  .paddingY{
-    padding:0!important;
-  }
 }

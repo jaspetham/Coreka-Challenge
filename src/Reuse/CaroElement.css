@@ -50,6 +50,7 @@
 .card-body p{
     color:var(--secondary-color);
     margin-bottom:0px;
+    padding:0 5px;
 }
 
 .card-body small{
@@ -73,4 +74,18 @@
     font-weight: 600;
     color:white;
     padding:5px 5px;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+
+}
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
 }

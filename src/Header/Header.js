@@ -10,7 +10,7 @@ function Header() {
         <Navbar expand="xl">
             <Container fluid className="position-relative">
                 <Row className="w-100">
-                    <Col className="col-10 col-xl-3 col-md-11 d-flex justify-content-lg-center">
+                    <Col className="col-10 col-xl-3 col-md-11 d-flex justify-content-xl-center">
                         <Navbar.Brand href="#home">
                             <Image src={Logo}/>
                         </Navbar.Brand>

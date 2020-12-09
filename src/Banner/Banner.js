@@ -20,11 +20,11 @@ function Banner() {
     return (
         <section id="banner" className="paddingY">
             <Container fluid className="paddingX">
-                <Row>
-                    <Col md={9} xs={12}>
+                <Row id="desktop-view">
+                    <Col lg={9} md={8} xs={12} className="d-none d-xl-block">
                         <Image fluid src={BannerImage} className="banner-img"/>
                     </Col>
-                    <Col md={3} xs={12} className="my-auto">
+                    <Col lg={3} md={4} xs={12} className="my-auto d-none d-xl-block">
                         <Slider {...settings}>
                             <CaroElement
                                 bigImgSrc={CaroBanner}
@@ -54,9 +54,11 @@ function Banner() {
                                 liveDuration="5:02:09"
                             />
                         </Slider>
-                      
-
                     </Col>
+                </Row>
+
+                <Row id="mobile-view">
+
                 </Row>
             </Container>
         </section>
