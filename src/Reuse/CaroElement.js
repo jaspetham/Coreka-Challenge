@@ -7,7 +7,7 @@ import './CaroElement.css';
 function CaroElement(props) {
     return (
         <Card>
-            <Card.Img variant="top" src={props.bigImgSrc} fluid />
+            <Card.Img variant="top" src={props.bigImgSrc}/>
             <Card.Body className="special-card">
                 <Row>
                     <Col xl={5} md={6} className="p-0">

@@ -9,6 +9,7 @@ import CaroImage from '../assets/caro-img.png';
 import CaroBanner from '../assets/caro-banner.png';
 import MobileBannerImage from '../assets/mobile-banner.png';
 import CaroElement from '../Reuse/CaroElement';
+
 function Banner() {
     const settings = {
         dots: true,
@@ -68,7 +69,7 @@ function Banner() {
                 </Row>
 
                 <Row id="mobile-view">
-                    <Col className="d-block d-sm-none p-0">
+                    <Col className="d-lg-none p-0">
                         <Slider {...mobileSettings}>
                             <Image fluid src={MobileBannerImage}/>
                             <Image fluid src={MobileBannerImage}/>
