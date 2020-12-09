@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card, Col, Image, Row } from 'react-bootstrap';
 import './CaroElement.css';
+import LiveButton from './LiveButton';
 
 function CaroElement(props) {
     return (
@@ -15,9 +16,9 @@ function CaroElement(props) {
                     </Col>
                     <Col xl={7} md={6} className="p-0">
                         <div className="caro-right">
-                            <Button variant="live" className="my-2">
-                                Live <FontAwesomeIcon className="mx-1"icon={faUserCircle}/> {props.liveUserNum}
-                            </Button>
+                            <LiveButton
+                                liveUserNum={props.liveUserNum}
+                            />
                             <span className="pl-4 text-white">{props.liveDuration}</span>
                             <p>{props.title}</p>
                             <small>by {props.author}</small>

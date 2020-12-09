@@ -1,0 +1,47 @@
+.streamerBox{
+    color:white;
+    padding:20px 0;
+}
+
+.streamerBox .top-box{
+    position: relative;
+}
+
+.streamerBox .top-box .btn-live{
+    position: absolute;
+    right:20px;
+}
+
+.streamerBox .body-box span{
+    color:orange;
+    font-size: 13px;
+}
+
+.streamerBox .body-box p{
+    color:var(--secondary-color);
+    margin-bottom: 0;
+    overflow: hidden;
+    width:285px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.streamerBox .body-box small{
+    color:rgba(255,255,255,.3);
+}
+
+.streamerBox .button-box .btn-streamer-atn{
+    padding:5px 10px;
+    display:inline-block;
+    border-radius: 25px;
+    color:white;
+    margin-right:15px;
+}
+
+.streamerBox .button-box .high{
+    background-color: orange;
+}
+
+.streamerBox .button-box .low{
+    background-color: #050944;
+}

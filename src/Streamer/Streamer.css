@@ -1,0 +1,6 @@
+#streamer .section-title p{
+    color:var(--secondary-color);
+}
+#streamer .btn-link{
+    padding:10px 25px;
+}
