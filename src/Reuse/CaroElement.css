@@ -1,5 +1,5 @@
 /* slider carousel custom css */
-.slick-slider{
+#desktop-view .slick-slider{
     left:-50%;
 }
 
@@ -12,8 +12,12 @@
     z-index:2;
     bottom:25%;
 }
-.slick-list{
+#desktop-view .slick-list{
     border-radius: 15px;
+}
+
+#mobile-view .slick-dots{
+    bottom:-40px;
 }
 .slick-next{
     right:-10px;
@@ -87,5 +91,15 @@ and (max-device-width : 1024px)  {
   and (min-width: 1024px) 
   and (max-height: 1366px) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      .slick-slider{
+          width:350px;
+      }
 
 }

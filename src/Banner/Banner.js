@@ -7,6 +7,7 @@ import './Banner.css';
 import BannerImage from '../assets/banner.png';
 import CaroImage from '../assets/caro-img.png';
 import CaroBanner from '../assets/caro-banner.png';
+import MobileBannerImage from '../assets/mobile-banner.png';
 import CaroElement from '../Reuse/CaroElement';
 function Banner() {
     const settings = {
@@ -16,6 +17,15 @@ function Banner() {
         slidesToShow: 1,
         slidesToScroll: 1,
     };
+
+    const mobileSettings ={
+        arrows:false,
+        dots:true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    }
 
     return (
         <section id="banner" className="paddingY">
@@ -58,7 +68,13 @@ function Banner() {
                 </Row>
 
                 <Row id="mobile-view">
-
+                    <Col className="d-block d-sm-none p-0">
+                        <Slider {...mobileSettings}>
+                            <Image fluid src={MobileBannerImage}/>
+                            <Image fluid src={MobileBannerImage}/>
+                            <Image fluid src={MobileBannerImage}/>
+                        </Slider>
+                    </Col>
                 </Row>
             </Container>
         </section>

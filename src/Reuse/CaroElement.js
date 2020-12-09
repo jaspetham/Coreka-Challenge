@@ -10,10 +10,10 @@ function CaroElement(props) {
             <Card.Img variant="top" src={props.bigImgSrc} fluid />
             <Card.Body className="special-card">
                 <Row>
-                    <Col xl={5} className="p-0">
+                    <Col xl={5} md={6} className="p-0">
                         <Image src={props.smallImgSrc} fluid/>
                     </Col>
-                    <Col xl={7} className="p-0">
+                    <Col xl={7} md={6} className="p-0">
                         <div className="caro-right">
                             <Button variant="live" className="my-2">
                                 Live <FontAwesomeIcon className="mx-1"icon={faUserCircle}/> {props.liveUserNum}
