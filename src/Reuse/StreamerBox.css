@@ -46,9 +46,13 @@
     background-color: #050944;
 }
 
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+@media(max-width:720px){
+    .streamerBox .body-box p{
+        width:200px!important;
+    }
+    
+    .streamerBox .top-box .btn-live{
+        right:5px;
+        font-size: 13px;
+    }
 }

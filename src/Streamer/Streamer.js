@@ -13,6 +13,9 @@ import Streamer9 from '../assets/streamer9.png';
 import Streamer10 from '../assets/streamer10.png';
 import Streamer11 from '../assets/streamer11.png';
 import StreamerBox from '../Reuse/StreamerBox';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function Streamer() {
     const streamers=[
@@ -75,6 +78,65 @@ function Streamer() {
             liveUserNum:2002,
             src:Streamer8
         },
+    ]
+
+    const streamersAll=[
+        {
+            id:1,
+            name: 'Aishwarya Iverys',
+            title:'Inside Brightland Founder Aisawanyaaaaa',
+            liveUserNum:322,
+            src:Streamer1
+        },
+        {
+            id:2,
+            name: 'Menscape',
+            title:'DISH BLOCK 21.5 oz HUGE',
+            liveUserNum:302,
+            src:Streamer2
+        },
+        {
+            id:3,
+            name:'Apple Tech Co Store',
+            title:'Essential work place Gadget and Accegvrefgewfwfewfew',
+            liveUserNum:102,
+            src:Streamer3
+        },
+        {
+            id:4,
+            name:'Ryza Kitchen',
+            title:'Business Casual For Men | 50% bid baddddddd',
+            liveUserNum:201,
+            src:Streamer4
+        },
+        {
+            id:5,
+            name:'Aishwarya Iverys',
+            title:'Inside Brightland Founder Aisawanyaaaaa',
+            liveUserNum:1020,
+            src:Streamer5
+        },
+        {
+            id:6,
+            name:'Apple Tech Co Store',
+            title:'Japanese Kitchen Knives..',
+            liveUserNum:2002,
+            src:Streamer6
+        },
+        {
+            id:7,
+            name:'Apple Tech Co Store',
+            title:'Japanese Kitchen Knives..',
+            liveUserNum:2002,
+            src:Streamer7
+        },
+        {
+            id:8,
+            name:'Apple Tech Co Store',
+            title:'Japanese Kitchen Knives..',
+            liveUserNum:2002,
+            src:Streamer8
+        }
     ]
 
     const streamers3=[
@@ -156,8 +218,31 @@ function Streamer() {
             </Col>
         )
     })
+    
+    const allStreamerList= streamersAll.map(streamer=>{
+        return(
+            <Col key={streamer.id} id={streamer.id}>
+                <StreamerBox
+                    name={streamer.name}
+                    title={streamer.title}
+                    liveCount={streamer.liveUserNum}
+                    src={streamer.src}
+                />
+            </Col> 
+        )
+    })
+
+    const mobileSettings ={
+        arrows:false,
+        dots:false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+    }
     return (
         <section id="streamer" className="paddingY">
+            {/* large monitor view */}
             <Container fluid className="paddingX large-screen">
                 {/* first row of streamer 3 item + 1 big text div  */}
                 <Row>
@@ -186,7 +271,7 @@ function Streamer() {
                     </Col>
                 </Row>
             </Container>
-
+            {/* laptop view */}
             <Container fluid className="paddingX laptop-screen">
                 <Row>
                     <Col className="my-auto">
@@ -207,6 +292,29 @@ function Streamer() {
                         </div>
                     </Col>
                 </Row>
+            </Container>
+            {/* mobile view */}
+            <Container fluid className="paddingX mobile-screen">
+                <Row>
+                    <Col className="section-title text-white">
+                        <p>Popular live events</p>
+                        <h1>Catch your favourite streams and personas</h1>
+                        <Button variant="link">Start watching now</Button>
+                    </Col>
+                </Row>
+                <Slider {...mobileSettings}>
+                    {allStreamerList}
+                </Slider>
+                <Row>
+                    <Col className="section-title text-white">
+                        <p>Upcoming live events</p>
+                        <h1>Browse through some of the upcoming live events hand picked by people.</h1>
+                        <Button variant="link">See more upcoming auctions</Button>
+                    </Col>
+                </Row>
+                <Slider {...mobileSettings}>
+                    {streamerList3}
+                </Slider>
             </Container>
         </section>
     )

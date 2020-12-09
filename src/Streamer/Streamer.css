@@ -9,6 +9,44 @@
     display:none;
 }
 
+.mobile-screen{
+    display:none;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .laptop-screen{
+        display:block;
+    }
+
+    .large-screen{
+        display:none;
+    }
+
+    .mobile-screen{
+        display:none;
+    }
+}
+
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .laptop-screen{
+        display:block;
+    }
+
+    .large-screen{
+        display:none;
+    }
+
+    .mobile-screen{
+        display:none;
+    }
+}
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -20,5 +58,36 @@
 
     .large-screen{
         display:none;
+    }
+
+    .mobile-screen{
+        display:none;
+    }
+}
+
+@media (max-width:720px){
+    .laptop-screen{
+        display:none;
+    }
+
+    .large-screen{
+        display:none;
+    }
+
+    .mobile-screen{
+        display:block;
+    }
+    .mobile-screen .section-title{
+        margin-bottom: 20px;
+    }
+    .mobile-screen .section-title p{
+        margin-bottom:10px;
+    }
+    .mobile-screen .section-title h1{
+        font-size: 25px;
+    }
+
+    .mobile-screen .section-title .btn-link{
+        font-size: 13px!important;
     }
 }
