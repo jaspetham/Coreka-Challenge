@@ -9,7 +9,7 @@
 
 .streamerBox .top-box .btn-live{
     position: absolute;
-    right:20px;
+    right:10px;
 }
 
 .streamerBox .body-box span{
@@ -54,5 +54,11 @@
     .streamerBox .top-box .btn-live{
         right:5px;
         font-size: 13px;
+    }
+    .streamerBox .body-box span{
+        font-size: 12px;
+    }
+    .streamerBox .button-box .btn-streamer-atn{
+        margin-right:9px;
     }
 }

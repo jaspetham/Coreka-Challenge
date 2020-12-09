@@ -10,7 +10,7 @@ function StreamerBox(props) {
                 <LiveButton
                     liveUserNum={props.liveCount}
                 />
-                <Image src={props.src} fluid/>
+                <Image src={props.src} fluid className="w-100"/>
             </div>
             <div className="body-box pt-3">
                 <span>{props.date}</span>

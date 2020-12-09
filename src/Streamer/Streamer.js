@@ -194,7 +194,20 @@ function Streamer() {
 
     const streamerLaptop = streamers2.map(streamer =>{
         return(
-            <Col key={streamer.id} id={streamer.id}>
+            <Col md={4} key={streamer.id} id={streamer.id}>
+                <StreamerBox
+                    name={streamer.name}
+                    title={streamer.title}
+                    liveCount={streamer.liveUserNum}
+                    src={streamer.src}
+                />
+            </Col>
+        )
+    })
+
+    const streamerLaptop2 = streamers3.map(streamer =>{
+        return(
+            <Col md={4} key={streamer.id} id={streamer.id}>
                 <StreamerBox
                     name={streamer.name}
                     title={streamer.title}
@@ -274,7 +287,7 @@ function Streamer() {
             {/* laptop view */}
             <Container fluid className="paddingX laptop-screen">
                 <Row>
-                    <Col className="my-auto">
+                    <Col lg={12} className="my-auto">
                         <div className="section-title text-white">
                             <p>Popular live events</p>
                             <h1>Catch your favourite streams and personas</h1>
@@ -283,8 +296,8 @@ function Streamer() {
                     </Col>
                     {streamerList}
                     {streamerLaptop}
-                    {streamerList3}
-                    <Col className="my-auto">
+                    {streamerLaptop2}
+                    <Col lg={12} className="my-auto">
                         <div className="section-title text-white">
                             <p>Upcoming live events</p>
                             <h1>Browse through some of the upcoming live events hand picked by people.</h1>
