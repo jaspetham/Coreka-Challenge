@@ -20,7 +20,16 @@ body {
   background: linear-gradient(174deg, rgba(14,38,65,1) 47%, rgba(246,249,252,1) 47%);
   height:30vh
 }
+@media (max-width:720px){
+  .stripe{
+    bottom:0;
+    top:-10%;
+    height:30vh;
+    background-position:63.5% top;
+  }
 
+
+}
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
