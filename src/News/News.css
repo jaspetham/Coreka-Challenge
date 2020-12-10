@@ -94,7 +94,7 @@ and (max-device-width : 1024px)  {
 }
 @media(max-width:720px){
     #news{
-        margin-top:50px;
+        padding-top:50px;
     }
 
     #news .btn-news{

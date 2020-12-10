@@ -9,7 +9,7 @@
 .icon-bar {
     width: 22px;
     height: 2px;
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
     display: block;
     transition: all 0.2s;
     margin-top: 4px;
