@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './Banner/Banner';
 import News from './News/News';
 import Streamer from './Streamer/Streamer';
+import PopularProduct from './PopularProduct/PopularProduct';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <section id="split">
           <div className="stripe"></div>
       </section>
+      <PopularProduct/>
     </div>
   );
 }

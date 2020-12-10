@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Import
 Stretch row same height - https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns
+react-slider slick - https://react-slick.neostack.com/
 
 ## Available Scripts
 

@@ -8,6 +8,13 @@
 #streamer .btn-link{
     padding:10px 20px;
     font-size: 16px!important;
+    transition: .5s ease;
+}
+
+#streamer .btn-link:hover{
+    text-decoration: none;
+    background-color: var(--primary-color)!important;
+    color:white!important;
 }
 
 .laptop-screen{

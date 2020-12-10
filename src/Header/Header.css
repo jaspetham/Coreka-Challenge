@@ -47,12 +47,12 @@
 
 .nav-link{
     color:white!important;
-    padding:0 30px!important;
+    padding:0 25px!important;
     transition: .5s ease;
 }
 
 .nav-link:hover{
-    color:var(--hover-color)!important;
+    color:var(--secondary-color)!important;
 }
 
 .form-inline .form-control{
@@ -93,7 +93,7 @@
 }
 
 .login-area:hover span{
-    color:var(--hover-color)!important;
+    color:var(--secondary-color)!important;
 }
 
 @media only screen 
@@ -135,6 +135,10 @@ and (max-device-width : 1024px)  {
   and (-webkit-min-device-pixel-ratio: 1) { 
       .form-inline .form-control{
           width:295px!important;
+      }
+
+      .wallet{
+          padding:8px 10px;
       }
 }
 

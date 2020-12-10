@@ -7,6 +7,7 @@ function StreamerBox(props) {
     return (
         <div className="streamerBox">
             <div className="top-box">
+                <div className="overlay"></div>
                 <LiveButton
                     liveUserNum={props.liveCount}
                 />

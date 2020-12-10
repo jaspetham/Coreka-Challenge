@@ -2,6 +2,27 @@
     color:white;
     padding:20px 0;
 }
+.streamerBox:hover{
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+  
+.top-box:hover .overlay {
+    opacity: 1;
+}
 
 .streamerBox .top-box{
     position: relative;
@@ -21,7 +42,6 @@
     color:var(--secondary-color);
     margin-bottom: 0;
     overflow: hidden;
-    width:285px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -36,8 +56,14 @@
     border-radius: 25px;
     color:white;
     margin-right:15px;
+    transition: .5s ease;
 }
-
+.streamerBox .button-box .btn-streamer-atn:hover.high{
+    background-color:red!important;
+}
+.streamerBox .button-box .btn-streamer-atn:hover.low{
+    background-color:green!important;
+}
 .streamerBox .button-box .high{
     background-color: orange;
 }

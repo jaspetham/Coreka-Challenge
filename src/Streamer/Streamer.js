@@ -168,14 +168,14 @@ function Streamer() {
 
     const streamerList= streamers.map(streamer=>{
         return(
-            <Col key={streamer.id} id={streamer.id}>
+            <div className="col-md-5ths" key={streamer.id} id={streamer.id}>
                 <StreamerBox
                     name={streamer.name}
                     title={streamer.title}
                     liveCount={streamer.liveUserNum}
                     src={streamer.src}
                 />
-            </Col>
+            </div>
         )
     })
 
@@ -192,39 +192,51 @@ function Streamer() {
         )
     })
 
-    const streamerLaptop = streamers2.map(streamer =>{
-        return(
-            <Col md={4} key={streamer.id} id={streamer.id}>
-                <StreamerBox
-                    name={streamer.name}
-                    title={streamer.title}
-                    liveCount={streamer.liveUserNum}
-                    src={streamer.src}
-                />
-            </Col>
-        )
-    })
-
-    const streamerLaptop2 = streamers3.map(streamer =>{
-        return(
-            <Col md={4} key={streamer.id} id={streamer.id}>
-                <StreamerBox
-                    name={streamer.name}
-                    title={streamer.title}
-                    liveCount={streamer.liveUserNum}
-                    src={streamer.src}
-                />
-            </Col>
-        )
-    })
-
     const streamerList3= streamers3.map(streamer=>{
         return(
-            <Col key={streamer.id} id={streamer.id}>
+            <div className="col-md-5ths" key={streamer.id} id={streamer.id}>
                 <StreamerBox
                     name={streamer.name}
                     title={streamer.title}
                     date={streamer.date}
+                    liveCount={streamer.liveUserNum}
+                    src={streamer.src}
+                />
+            </div>
+        )
+    })
+
+    const streamerLaptop = streamers.map(streamer =>{
+        return(
+            <Col md={4} key={streamer.id} id={streamer.id}>
+                <StreamerBox
+                    name={streamer.name}
+                    title={streamer.title}
+                    liveCount={streamer.liveUserNum}
+                    src={streamer.src}
+                />
+            </Col>
+        )
+    })
+    const streamerLaptop2 = streamers2.map(streamer =>{
+        return(
+            <Col md={4} key={streamer.id} id={streamer.id}>
+                <StreamerBox
+                    name={streamer.name}
+                    title={streamer.title}
+                    liveCount={streamer.liveUserNum}
+                    src={streamer.src}
+                />
+            </Col>
+        )
+    })
+
+    const streamerLaptop3 = streamers3.map(streamer =>{
+        return(
+            <Col md={4} key={streamer.id} id={streamer.id}>
+                <StreamerBox
+                    name={streamer.name}
+                    title={streamer.title}
                     liveCount={streamer.liveUserNum}
                     src={streamer.src}
                 />
@@ -259,7 +271,7 @@ function Streamer() {
             <Container fluid className="paddingX large-screen">
                 {/* first row of streamer 3 item + 1 big text div  */}
                 <Row>
-                    <Col lg={4} className="my-auto">
+                    <Col className="my-auto">
                         <div className="section-title text-white">
                             <p>Popular live events</p>
                             <h1>Catch your favourite streams and personas</h1>
@@ -294,9 +306,9 @@ function Streamer() {
                             <Button variant="link">Start watching now</Button>
                         </div>
                     </Col>
-                    {streamerList}
                     {streamerLaptop}
                     {streamerLaptop2}
+                    {streamerLaptop3}
                     <Col lg={12} className="my-auto">
                         <div className="section-title text-white">
                             <p>Upcoming live events</p>

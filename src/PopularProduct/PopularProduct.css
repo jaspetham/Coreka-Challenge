@@ -1,0 +1,83 @@
+#popular .popular-title .btn-buy{
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+    padding:10px 40px;
+    box-shadow:0 10px 10px -2px rgba(0,0,0,.4) ;
+    background-color: var(--secondary-color);
+}
+
+#popular .popular-title p{
+    color:#6A75E7;
+}
+
+#popular .popular-title .btn-buy:hover{
+    background-color: white;
+    color:var(--secondary-color);
+}
+#popular .nav-tabs{
+    border:none;
+}
+
+#popular .nav-tabs .nav-link:hover{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+#popular .nav-tabs .nav-link:hover .tab-icons{
+    color:white;
+}
+
+#popular .nav-tabs .nav-link:hover span{
+    color:white;
+}
+#popular .nav-tabs .nav-link:first-child{
+    margin-left:0!important;
+}
+#popular .nav-tabs .nav-link{
+    background-color: transparent;
+    padding:10px 15px!important;
+    background-color: white;
+    border:none;
+    box-shadow:0 4px 4px -2px rgba(0,0,0,.4) ;
+    border-radius: 25px;
+    margin:20px 10px!important;
+    color:black!important;
+}
+
+#popular .nav-tabs .nav-link span{
+    font-size: 15px;
+}
+
+#popular .nav-tabs .tab-icons{
+    color:black;
+    margin-right: 5px;
+}
+
+#popular .nav-link{
+    color:black!important;
+}
+
+#popular .mobile-view{
+    display:none;
+}
+
+@media(max-width:720px){
+    #popular .mobile-view .nav-tabs .nav-link:first-child{
+        margin-left:10px!important;
+    }
+
+    #popular .mobile-view .nav-tabs .nav-link{
+        padding:5px 10px!important;
+        margin:10px 10px!important;
+        display: inline-flex;
+    }
+
+    #popular .desktop-view{
+        display:none;
+    }
+
+    #popular .mobile-view{
+        display:block;
+    }
+}
