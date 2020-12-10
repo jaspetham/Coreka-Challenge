@@ -154,7 +154,7 @@ const productList = products.map(product=>{
     )
 })
 
-const productListCloth = productsCloth .map(product=>{
+const productListCloth = productsCloth.map(product=>{
     return(
         <div className="col-md-5ths" key={product.id} id={product.id}>
             <Product
@@ -353,6 +353,16 @@ function PopularProduct() {
                     </Tabs>
                 </div>
                 <Advertisment/>
+
+                <Row className="pt-5 desktop-view">
+                    {productList}
+                </Row>
+
+                <Row className="pt-5 mobile-view">
+                    <Slider {...mobileSettings}>
+                        {productListCloth}
+                    </Slider>
+                </Row>
             </Container>
         </section>
     )

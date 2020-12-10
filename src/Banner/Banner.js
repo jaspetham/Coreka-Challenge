@@ -2,13 +2,15 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import {Col, Container, Image, Row } from 'react-bootstrap';
+import {Button, ButtonGroup, Col, Container, Image, Row} from 'react-bootstrap';
 import './Banner.css';
 import BannerImage from '../assets/banner.png';
 import CaroImage from '../assets/caro-img.png';
 import CaroBanner from '../assets/caro-banner.png';
 import MobileBannerImage from '../assets/mobile-banner.png';
 import CaroElement from '../Reuse/CaroElement';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 function Banner() {
     const settings = {
@@ -31,6 +33,13 @@ function Banner() {
     return (
         <section id="banner" className="paddingY">
             <Container fluid className="paddingX">
+                <div className="navNumber text-white py-3">
+                    <span>Nav Link 1</span>
+                    <span>
+                        <FontAwesomeIcon icon={faCircle}/>
+                         Nav Link 2
+                    </span>
+                </div>
                 <Row id="desktop-view">
                     <Col lg={9} md={8} xs={12} className="d-none d-xl-block">
                         <Image fluid src={BannerImage} className="banner-img"/>

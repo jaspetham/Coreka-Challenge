@@ -1,7 +1,27 @@
 #banner{
     background-color: var(--background-color);
 }
+
+#banner.paddingY{
+    padding-top:0!important;
+}
 .banner-img{
     background-size: contain;
     width:100%;
+}
+
+#banner .navNumber span{
+    padding-right:30px;
+}
+
+#banner .navNumber .fa-circle{
+    margin-right:10px;
+    font-size: 10px;
+    color:#00FF14;
+}
+
+@media(max-width:720px){
+    #banner .navNumber{
+        padding-left: 10px;
+    }
 }
