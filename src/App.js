@@ -12,6 +12,9 @@ function App() {
       <Banner/>
       <News/>
       <Streamer/>
+      <section id="split">
+          <div className="stripe"></div>
+      </section>
     </div>
   );
 }

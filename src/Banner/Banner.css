@@ -1,3 +1,6 @@
+#banner{
+    background-color: var(--background-color);
+}
 .banner-img{
     background-size: contain;
     width:100%;

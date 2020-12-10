@@ -1,3 +1,31 @@
 body {
     font-family: "Poppins", sans-serif;
-  }
+}
+
+.stripe{
+  background-image: url('./assets/bg-stripe.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+  width:100%;
+  background-position: center;
+  height:50vh;
+  position: absolute;
+  bottom:-26%;
+}
+
+#split{
+  position: relative;
+  background: rgb(14,38,65);
+  background: linear-gradient(174deg, rgba(14,38,65,1) 47%, rgba(246,249,252,1) 47%);
+  height:30vh
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .stripe{
+      bottom:-26%!important;
+    }
+}

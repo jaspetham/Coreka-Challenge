@@ -6,7 +6,8 @@ body,html{
 }
 body {
   margin: 0;
-  background-color: #0E2641!important;
+  /* background-color: #0E2641!important; */
+  background-color: var(--background-color2)!important;
   font-family:"Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

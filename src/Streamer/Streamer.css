@@ -1,3 +1,7 @@
+#streamer{
+    background-color:#0e2641 ;
+}
+
 #streamer .section-title p{
     color:var(--secondary-color);
 }
